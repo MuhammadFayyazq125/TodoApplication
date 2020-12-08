@@ -1,0 +1,98 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #e5c28f;
+    font-family: "poppins",sans-serif;
+    min-height: 100vh;
+}
+
+header{
+    font-size: 1.5rem;
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+.form{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 20px;
+    
+}
+input, button{
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: white;
+}
+input{
+    border-radius:10px 0px 0px 10px;
+    border-style: none;
+}
+button{
+    color: #d88771;
+    background: white;
+    cursor: pointer;
+    transition: 0.5s all ease;
+}
+button:hover{
+    background-color: #d88771;
+    color: white;
+}
+.todo-list{
+    margin: 30px auto;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   width: 40%;
+   
+}
+
+.btnRight{
+margin-left: 10px;
+
+} 
+.liCenter{
+    background-color: white;
+    color: black;
+    width: 100%;
+    list-style-type: none;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+
+}
+.Li-div {
+    flex: 1;
+    padding-left: 10px;
+}
+.Li-div p {
+    margin: 0;
+}
+
+@media screen and (max-width: 991px){
+    .todo-list{
+        width:80%
+    }
+    .form{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px){
+    .todo-list{
+        width:80%
+    }
+    .form{
+        width: 50%;
+    }
+}
